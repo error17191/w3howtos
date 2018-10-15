@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Horizontal</title>
+    <title>Horizontal Using Flex</title>
     <script defer src="../vendor/fontawesome/js/all.js"
             crossorigin="anonymous"></script>
     <style>
@@ -11,6 +11,7 @@
             margin: 0;
         }
         .horizontal-bar {
+            display: flex;
             width: 100%;
             background-color: #555;
             list-style: none;
@@ -18,19 +19,17 @@
             overflow: hidden;
             margin: 0;
         }
-
         .horizontal-bar .item{
-            width: 20%;
-            display: block;
-            float: left;
-            cursor: pointer;
+            flex-grow: 1;
+            display: flex;
         }
-
         .horizontal-bar .item a{
-            display: block;
-            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
             font-size: 35px;
             padding: 10px;
+            cursor: pointer;
         }
 
         .horizontal-bar .item a,
