@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Horizontal</title>
+    <script defer src="../vendor/fontawesome/js/all.js"
+            crossorigin="anonymous"></script>
+    <style>
+        body, html{
+            padding: 0;
+            margin: 0;
+        }
+        .horizontal-bar {
+            width: 100%;
+            background-color: #555;
+            list-style: none;
+            padding: 0;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        .horizontal-bar .item{
+            width: 20%;
+            display: block;
+            float: left;
+        }
+
+        .horizontal-bar .item a{
+            display: block;
+            text-align: center;
+            font-size: 35px;
+            padding: 10px;
+        }
+
+        .horizontal-bar .item a,
+        .horizontal-bar .item a:focus,
+        .horizontal-bar .item a:hover,
+        .horizontal-bar .item a:active{
+            color: white;
+            text-decoration: none;
+        }
+
+        .horizontal-bar .item.active{
+            background-color: #4CAF50;
+        }
+        .horizontal-bar .item:hover{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<ul class="horizontal-bar">
+    <li class="item active">
+        <a>
+            <i class="fas fa-home"></i>
+        </a>
+    </li>
+    <li class="item">
+        <a>
+            <i class="fas fa-search"></i>
+        </a>
+    </li>
+    <li class="item">
+        <a>
+            <i class="fas fa-envelope"></i>
+        </a>
+    </li>
+    <li class="item">
+        <a>
+            <i class="fas fa-globe"></i>
+        </a>
+    </li>
+    <li class="item">
+        <a>
+            <i class="fas fa-trash"></i>
+        </a>
+    </li>
+</ul>
+</body>
+</html>
