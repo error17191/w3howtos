@@ -116,7 +116,7 @@
         document.querySelectorAll('.dropdown').forEach((el) => {
             el.classList.remove('open');
         });
-        
+
         if(e.target.classList.contains('toggle') && e.target.parentElement.classList.contains('dropdown')){
             e.target.parentElement.classList.toggle('open');
         }
